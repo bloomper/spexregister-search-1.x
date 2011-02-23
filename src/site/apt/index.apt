@@ -1,0 +1,13 @@
+ ----
+ Spexregister Search
+ ----
+ 
+Installation
+
+  Follow these steps:
+
+   * mvn clean install t7:run (for development)
+
+   * install the WAR file in Tomcat (for production)
+
+   []
