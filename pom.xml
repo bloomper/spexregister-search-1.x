@@ -41,6 +41,12 @@
             <version>1.4.1</version>
             <type>war</type>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.5.5</version>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
     <build>
         <finalName>spexregister.search</finalName>
@@ -75,7 +81,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                  <archiveClasses>true</archiveClasses>
+                    <archiveClasses>true</archiveClasses>
+                    <dependentWarExcludes>WEB-INF/lib/slf4j-jdk14-*.jar</dependentWarExcludes>
                 </configuration>
             </plugin>
             <plugin>
