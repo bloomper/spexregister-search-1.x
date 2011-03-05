@@ -115,12 +115,12 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/solr/conf</outputDirectory>
+                            <outputDirectory>${basedir}/solr</outputDirectory>
                             <resources>          
                                 <resource>
                                     <directory>${project.build.sourceDirectory}/../solr</directory>
                                     <includes>
-                                        <include>*.*</include>
+                                        <include>**/*</include>
                                     </includes>
                                 </resource>
                             </resources>              
