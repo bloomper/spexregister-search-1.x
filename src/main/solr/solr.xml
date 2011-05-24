@@ -7,6 +7,7 @@
     If 'null' (or absent), cores will not be manageable via request handler
   -->
   <cores adminPath="/admin/cores">
+    <core name="all" instanceDir="all" dataDir="../data/all"/>
     <core name="en" instanceDir="en" dataDir="../data/en"/>
     <core name="sv" instanceDir="sv" dataDir="../data/sv"/>
   </cores>
