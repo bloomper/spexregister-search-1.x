@@ -133,6 +133,8 @@
                 <artifactId>maven-t7-plugin</artifactId>
                 <configuration>
                     <tomcatVersion>7.0.32</tomcatVersion>
+                    <tomcatShutdownPort>8005</tomcatShutdownPort>
+                    <tomcatHttpPort>8080</tomcatHttpPort>
                 </configuration>
             </plugin>
         </plugins>
