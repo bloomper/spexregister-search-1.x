@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>nu.fgv.register</groupId>
     <artifactId>search</artifactId>
     <packaging>war</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Spexregister Search</name>
     <inceptionYear>2012</inceptionYear>
     <url>https://register.fgv.nu/</url>
@@ -21,7 +20,7 @@
         <url>http://fgv.nu</url>
     </organization>
     <scm>
-        <connection>scm:svn:svn://192.168.4.110/spexregister/spexregister.search/trunk</connection>
+        <connection>scm:svn:svn://192.168.4.110/spexregister/spexregister.search/tags/search-1.0.0</connection>
     </scm>
     <developers>
         <developer>
@@ -80,6 +79,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
                 <configuration>
                     <archiveClasses>true</archiveClasses>
                     <dependentWarExcludes>WEB-INF/lib/slf4j-jdk14-*.jar</dependentWarExcludes>
@@ -133,6 +133,8 @@
                 <artifactId>maven-t7-plugin</artifactId>
                 <configuration>
                     <tomcatVersion>7.0.32</tomcatVersion>
+                    <tomcatShutdownPort>8005</tomcatShutdownPort>
+                    <tomcatHttpPort>8080</tomcatHttpPort>
                 </configuration>
             </plugin>
         </plugins>
